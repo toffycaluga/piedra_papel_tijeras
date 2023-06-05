@@ -6,6 +6,8 @@ Este repositorio contiene un juego de Piedra, Papel y Tijeras implementado en Ru
 
 ### Características principales:
 
+![diagrama](./assets/img/digrama.png)
+
 - **Interfaz de línea de comandos:**
   El juego se ejecuta completamente en la terminal, lo que permite al jugador ingresar sus elecciones y ver los resultados.
 - **Lógica del juego:**
