@@ -10,16 +10,30 @@ jugador_uno =ARGV[0].chomp.downcase
 
 verificador = false
 
-# se verifica por medio de un circo para ver si la opcion corresponde
+# se verifica por medio de un ciclo para ver si la opcion corresponde
 opciones.each do |opcion|
     if jugador_uno == opcion
         verificador= true
     end
 end
 
+
+
+
 if verificador 
     puts "has escogido: #{jugador_uno}"
-    jugador_dos = opciones.sample
+    jugador_dos = rand(3) + 1
+
+  # Asignar las opciones del computador a su respectivo número
+    case jugador_dos
+    when 1
+        jugador_dos = "piedra"
+    when 2
+        jugador_dos = "papel"
+    when 3
+        jugador_dos = "tijera"
+    end
+    
     puts "y yo escogi: #{jugador_dos}" 
     if jugador_uno == jugador_dos
         puts "es un empate !😅 \n veo que pensamos parecido😂, por que no lo vuelves a intentar"
