@@ -1,5 +1,5 @@
 # seleccion juador 1
-puts "Bienvenidos al jueo piedra, papel, tijeras"
+puts "Bienvenido al juego piedra, papel, tijeras"
 
 
 opciones = ["piedra","papel","tijeras"]
@@ -18,15 +18,15 @@ opciones.each do |opcion|
 end
 
 if verificador 
-    puts "el jugador uno eligio #{jugador_uno}"
+    puts "has escogido: #{jugador_uno}"
     jugador_dos = opciones.sample
-    puts "el jugador dos eligio #{jugador_dos}" 
+    puts "y yo escogi: #{jugador_dos}" 
     if jugador_uno == jugador_dos
-        puts "es un empate😅"
+        puts "es un empate !😅 \n veo que pensamos parecido😂, por que no lo vuelves a intentar"
     elsif (jugador_uno == 'piedra' && jugador_dos == 'tijeras')||(jugador_uno == 'papel' && jugador_dos == 'piedra')||(jugador_uno == 'tijeras' && jugador_dos == 'papel')
-        puts "Ganaste jugador uno 🤩"
+        puts "Has ganado!🤩 \n veo que tienes experiencia , pero quiero mi revancha! "
     else 
-        puts "perdiste 😒"
+        puts "has perdido 😒 \n no siempre se puede ganar, vuelve a intentarlo!"
     end
 else
     puts "debes elejir una opcion entre piedra papel o tijeras"
